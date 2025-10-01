@@ -49,6 +49,7 @@ namespace WAPP2502
             {
                 Session["gender"] = "Female";
             }
+            Session["country"] = ddlCountry.SelectedValue;
         }
     }
 }
