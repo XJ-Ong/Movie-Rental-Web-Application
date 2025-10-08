@@ -100,6 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="admin.aspx" />
     <Content Include="App_Data\wapp.mdf" />
     <Content Include="App_Data\wapp_log.ldf">
       <DependentUpon>wapp.mdf</DependentUpon>
@@ -131,6 +132,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="LoginPage.aspx" />
+    <Content Include="manageMovie.aspx" />
     <Content Include="ManageProfile.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -201,6 +203,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -268,6 +277,13 @@
     </Compile>
     <Compile Include="LoginPage.aspx.designer.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manageMovie.aspx.cs">
+      <DependentUpon>manageMovie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manageMovie.aspx.designer.cs">
+      <DependentUpon>manageMovie.aspx</DependentUpon>
     </Compile>
     <Compile Include="ManageProfile.aspx.cs">
       <DependentUpon>ManageProfile.aspx</DependentUpon>

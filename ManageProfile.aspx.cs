@@ -21,7 +21,7 @@ namespace WAPP2502
                 txtEmail.Text = Session["email"].ToString();
                 txtFirstName.Text = Session["firstname"].ToString();
                 txtLastName.Text = Session["lastname"].ToString();
-                txtAge.Text = Session["age"].ToString();]
+                txtAge.Text = Session["age"].ToString();
                 if (Session["gender"].ToString() == "Male")
                 {
                     rdoGender.SelectedIndex = 0;

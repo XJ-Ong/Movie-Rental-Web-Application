@@ -18,6 +18,10 @@ namespace WAPP2502
                 lbtnLogin.Visible = false;
                 lbtnReg.Visible = false;
             }
+            else if (Session["AID"] != null)
+            {
+                Response.Redirect("admin.aspx");
+            }
             else
             {
                 lblWelcome.Text = "Welcome, Guest";
